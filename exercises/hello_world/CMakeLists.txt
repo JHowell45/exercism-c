@@ -1,12 +1,17 @@
 ####################################################################################
+# Exercise Variables:
+####################################################################################
+set (EXERCISE_NAME hello_world)
+
+####################################################################################
 # Library:
 ####################################################################################
-add_library(hello_world STATIC src/hello_world.c)
-target_include_directories(hello_world PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
+add_library(${EXERCISE_NAME} STATIC src/${EXERCISE_NAME}.c)
+target_include_directories(${EXERCISE_NAME} PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
 
 ####################################################################################
 # Tests:
 ####################################################################################
-add_executable(hello_world_test tests/hello_world.c)
-target_link_libraries(hello_world_test hello_world unity)
-add_test(hello_world_test hello_world_test)
+add_executable(${EXERCISE_NAME}_test tests/${EXERCISE_NAME}.c)
+target_link_libraries(${EXERCISE_NAME}_test ${EXERCISE_NAME} unity)
+add_test(${EXERCISE_NAME}_test ${EXERCISE_NAME}_test)
