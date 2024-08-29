@@ -12,3 +12,8 @@ FetchContent_Declare(
 )
 # For Windows: Prevent overriding the parent project's compiler/linker settings
 FetchContent_MakeAvailable(unitytest)
+
+####################################################################################
+# Add Subdirectories:
+####################################################################################
+add_subdirectory("exercises")
