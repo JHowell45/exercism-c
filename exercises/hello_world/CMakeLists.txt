@@ -9,4 +9,4 @@ target_include_directories(hello_world PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include)
 ####################################################################################
 add_executable(hello_world_test tests/hello_world.c)
 target_link_libraries(hello_world_test hello_world unity)
-add_test(NAME hello_world_test COMMAND hello_world_test)
+add_test(hello_world_test hello_world_test)
