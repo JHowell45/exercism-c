@@ -1,9 +1,12 @@
 // Include the test framework.
 #include "unity.h"
 #include "binary_search_tree.h"
+
 #include <stdlib.h>
 #include <stdbool.h>
+
 #define ARRAY_SIZE(arr) (sizeof(arr) / sizeof(arr[0]))
+
 void setUp(void)
 {
 }
