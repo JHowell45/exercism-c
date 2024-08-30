@@ -29,7 +29,6 @@ static void test_orange(void)
 static void test_colors(void)
 {
    const resistor_band_t expected[] = { BLACK, BROWN, RED,    ORANGE, YELLOW,
-
                                         GREEN, BLUE,  VIOLET, GREY,   WHITE };
 
    const resistor_band_t *actual = colors();
