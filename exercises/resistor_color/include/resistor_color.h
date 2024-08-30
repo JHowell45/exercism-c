@@ -18,6 +18,6 @@ typedef enum {
 
 uint16_t color_code(resistor_band_t code);
 
-const resistor_band_t *colors();
+const resistor_band_t *colors(void);
 
 #endif
