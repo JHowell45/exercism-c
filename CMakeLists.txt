@@ -4,6 +4,8 @@ project("exercism-c")
 ####################################################################################
 # Install Test Framework:
 ####################################################################################
+set(UNITY_INCLUDE_CONFIG_H unity_config.h)
+
 include(FetchContent)
 FetchContent_Declare(
   unity
