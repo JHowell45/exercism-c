@@ -9,10 +9,11 @@ FetchContent_Declare(
   unity
   GIT_REPOSITORY https://github.com/ThrowTheSwitch/Unity.git
   GIT_TAG        860062d51b2e8a75d150337b63ca2a472840d13c # v2.6.0
+  PATCH_COMMAND git apply ${CMAKE_CURRENT_SOURCE_DIR}/unity.patch
 )
 # For Windows: Prevent overriding the parent project's compiler/linker settings
 FetchContent_MakeAvailable(unity)
-target_include_directories(unity INTERFACE unity_config.h)
+# target_include_directories(unity INTERFACE unity_config.h)
 # file(COPY unity_config.h DESTINATION ${unity_SOURCE_DIR}/src)
 
 ####################################################################################
