@@ -3,6 +3,7 @@ add_subdirectory("leap")
 add_subdirectory("difference_of_squares")
 add_subdirectory("grains")
 add_subdirectory("resistor_color")
+add_subdirectory("collatz_conjecture")
 
 
 
